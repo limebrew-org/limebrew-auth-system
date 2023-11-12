@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  api:
+    container_name: limebrew-auth-server
+
+    ##?Build from current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ##?Expose port
+    ports:
+      - 8080:8080
